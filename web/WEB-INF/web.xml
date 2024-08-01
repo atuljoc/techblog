@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>registerservlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.registerservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.loginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutservlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.logoutservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editservlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.editservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerservlet</servlet-name>
+        <url-pattern>/registerservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutservlet</servlet-name>
+        <url-pattern>/logoutservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editservlet</servlet-name>
+        <url-pattern>/editservlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
